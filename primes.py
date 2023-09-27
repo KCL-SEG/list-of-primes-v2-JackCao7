@@ -14,19 +14,19 @@ def primes(number_of_primes):
         list.append(3)
         if number_of_primes > 2: 
             i=2                                     
-            scan = 4
+            scan = 5
             while i < number_of_primes:
                 div = 2
-                while div < scan:   
+                while (div < scan)  :  
                     if div == (scan-1):
                         list.append(scan)
-                        i+=1
-                        div+=1
-                    elif not(scan%div==0):    
-                        div+=1            
+                        i+=1            
+                    elif not(scan%div==0):
+                        pass
                     else:               
-                        break
-                scan+=1
+                        break  
+                    div+=1  
+                scan+=2
     return list
 
 
